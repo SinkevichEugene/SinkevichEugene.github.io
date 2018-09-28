@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+}
+.clear {
+	clear: both;
+	font-size: 0px;
+}
+.fullpageWrapper {
+	border-color: #f8f8f8;
+	background: url(img/fon.jpg) no-repeat center;
+	background-attachment: fixed;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+header {
+	background-color: #fff;
+	display: block;
+}
+.navbar {
+	background-color: #fff;
+}
+.navbar-brand {
+	margin-right: 0;
+}
+
+.navbar-brand img {
+	width: 200px;
+	height: auto;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	background: #03346d;
+	color: #fff;
+	padding: 10px 8px;
+	margin-right: 10px;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 13px;
+}
+.dropdown-item {
+	color: #03346d;
+}
+.nav-item:hover .dropdown-menu {
+	display: block;
+	margin-top: 0;
+}
+.fa-lang_ru {
+display: block;
+width: 25px;
+height: 15px;
+background: url('img/Rossiya.png');
+margin: 0 auto 4px auto;
+}
+.navbar-expand-lg .navbar-nav .nav-lang {
+	background: #16ab16;
+	border: 3px solid #15ab15;
+	box-sizing: border-box;
+	padding: 7px 20px;
+}
+.nav-lang:after {
+	display: none;
+}
+
+/**************MAIN SLIDER**************/
+.mainSlider {
+	margin-top: 50px;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+/**************MAIN SLIDER END**************/
+
+/**************MAIN APLICATION**************/
+.mainApplication {
+	margin: 50px auto;
+}
+.mainApplication input[type="text"], .mainApplication input[type="email"], .mainApplication input[type="date"], .mainApplication select {
+	width: 100%;
+	height: 34px;
+	border: 1px solid #aaa;
+	color: #444;
+	font-size: 16px;
+	color: rgb(75, 74, 74);
+	font-family: 'Open Sans' sans-serif;
+}
+.row-form {
+	margin-top: 15px;
+	border-radius: 3px;
+}
+.mainApplication label {
+	position: relative;
+	display: inline;
+	line-height: 20px;
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+.addOrder-title {
+	background: #CDCDCD;
+	border: 1px solid #8b8b8b;
+	cursor: pointer;
+	height: 60px;
+	padding-left: 0;
+}
+.mainApplication .addOrder-title-one {
+	background-image: url(img/box.png);
+	background-repeat: no-repeat;
+	background-position: 5px 10px;
+}
+.mainApplication .addOrder-title-two {
+	background-image: url(img/truck2.png);
+	background-repeat: no-repeat;
+	background-position: 5px 10px;
+}
+.active {
+	background: #fff;
+	border-bottom: none;
+}
+
+.addOrder-title h3 {
+	color: #f20000;
+	font-size: 17px;
+	text-align: center;
+	font-family: 'OpenSans';
+	font-weight: bold;
+	margin-top: 20px;
+}
+.text-danger {
+	background-color: #f2dede;
+	color: #a94442;
+	text-align: center;
+	font-size: 12px;
+	width: 100%;
+}
+.mainApplication label[for="inputTextarea"] {
+	position: relative;
+	display: inline;
+	line-height: 20px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #888;
+}
+.textareaDetails {
+	color: #5d5d5d;
+	font-size: 12px;
+}
+.mainApplication textarea {
+	width: 100%;
+	height: 104px;
+	margin: 0;
+	border-color: #aaa;
+}
+.langSwitchText {
+	width: 100%;
+	line-height: 20px;
+	font-size: 13px;
+	font-weight: 400;
+	color: #888;
+}
+.form-one {
+	background: #fff;
+	border: 1px solid #8b8b8b;
+	border-top: none;
+	padding-bottom: 30px;
+}
+.row-form button[type="submit"] {
+	float: right;
+	border: 1px;
+	background: #FF9900;
+	width: 150px;
+	height: 37px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	color: #fff;
+	margin: 20px 20px 20px 0;
+	border-radius: 3px;
+}
+.form-two {
+	background: #fff;
+	border: 1px solid #8b8b8b;
+	border-top: none;
+	padding-bottom: 30px;
+	display: none;
+}
+
+/**************MAIN APLICATION END**************/
+
+/**************MAIN TITLE**************/
+
+.mainTitle h1 {
+	font-family: 'Open Sans';
+	font-size: 40px;
+	color: #251e1e;
+	font-weight: bold;
+	text-shadow: 3px 2px 3px #fff;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.mainTitle-red {
+	color: #f21818;
+}
+.mainTitle-text {
+	font-size: 30px;
+}
+
+/**************MAIN TITLE END**************/
+
+/**************MAIN ORDERS**************/
+
+.order {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	padding: 20px 5px 5px 5px;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 3px;
+	overflow: auto;
+}
+.order h3 {
+	margin: 5px 0 0 30px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #251e1e;
+	text-transform: uppercase;
+}
+.order ul {
+	min-height: 300px;
+	list-style-type: none;
+	margin-left: -15px;
+	margin-right: 5px;
+}
+.order li {
+	text-align: left;
+	font-size: 15px;
+	margin-bottom: 10px;
+	line-height: 24px;
+	color: #1d1d1d;
+	display: block;
+}
+.order .orderContent {
+	min-height: 40px;
+	display: block;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #5d5d5d;
+}
+.order img {
+	display: inline-block;
+	margin-right: 6px;
+}
+.order div {
+	display: inline-block;
+}
+.order .date {
+	text-align: left;
+	font-size: 15px;
+	line-height: 24px;
+	color: #1d1d1d;
+	font-style: italic;
+	margin-right: 10px;
+}
+.orderType {
+	font-weight: bold;
+	color: #337ab7;
+}
+.orderDescription {
+	text-align: left;
+	font-size: 15px;
+	color: #337ab7;
+	display: block;
+}
+.orderButton {
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	float: right;
+	border: 1px;
+	background: #FF9900;
+	width: 150px;
+	height: 37px;
+	line-height: 34px;
+	font-family: 'Open Sans' sans-serif;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: none;
+	margin: 20px 20px 20px 0;
+}
+.orderButton:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+/**************MAIN ORDERS END**************/
+
+
+/**************MAP-CONTAINER**************/
+.map-title {
+	background: #CDCDCD;
+	cursor: pointer;
+	height: 60px;
+	color: #464646;
+}
+.map-title h3 {
+	font-size: 20px;
+	text-align: center;
+	padding-top: 18px;
+}
+.map-container .tab1 {
+	background-image: url(img/box.png);
+	background-repeat: no-repeat;
+	background-position: 5px 10px;
+}
+.map-container .tab2 {
+	background-image: url(img/truck2.png);
+	background-repeat: no-repeat;
+	background-position: 5px 10px;
+}
+.map-title-one, .map-title-two {
+	cursor: pointer;
+	color: #464646;
+	background-color: #CDCDCD;
+}
+.map-mark {
+	background-color: #fff;
+	margin-top: 6px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Arial;
+	color: #000;
+	font-size: 16px;
+}
+ 
+.map_stripe_bottom {
+    background-color: rgba(255, 255, 255, 0.6);
+ height: 20px;}
+
+.map-container .indexPage_showTransport 
+{ 
+    float: right; 
+    text-decoration: underline; 
+    color: #03346d;
+    display: inline-block; 
+    margin-right: 20px; 
+    font-size: 14px;
+    padding-top: 30px; 
+    font-weight: normal;
+}
+
+.mapInfo { background-color: #fff; margin: 20px 0; padding: 10px;}
+.mapInfo ul{ list-style:none; margin: 0;}
+    .mapInfo h4 { font-size: 14px;
+    }
+    .mapInfo ul li {
+        background-position: left center;
+        background-repeat: no-repeat;
+        height: 32px;
+        display: inline-block;
+        padding-left: 44px;
+        margin-right: 20px;
+        line-height: 40px;
+    }
+    .mapInfo ul .mapInfo_from {
+        background-image: url('img/google_marker_green_dot.png');
+        
+    }
+    .mapInfo ul .mapInfo_to {
+        background-image: url('img/google_marker_red_dot.png');
+    }
+
+/**************MAP-CONTAINER END**************/
+
+
+/**************MAIN ADVANTAGE**************/
+.mainAdvantages {
+	margin-top: 50px;
+	padding-bottom: 10px;
+	background-color: rgba(255, 255, 255, 0.75);
+	margin-bottom: 20px;
+}
+.mainAdvantages h2 {
+	width: 100%;
+	text-align: center;
+	margin: 30px auto;
+	font-family: 'Open Sans';
+	font-size: 24px;
+	color: #251e1e;
+	font-weight: bold;
+}
+.mainAdvantages .counter {
+	margin-left: -15px;
+	border-bottom: 2px solid rgba(0,0,0,.15);
+	margin-bottom: 30px;
+}
+.mainAdvantages .counter p {
+	font-family: Impact;
+	font-size: 40px;
+	color: #FF9900;
+	font-weight: bold;
+	text-align: center;
+}
+.mainAdvantages .counter h3 {
+	text-align: center;
+	font-size: 20px;
+	color: #251e1e;
+	margin-bottom: 30px;
+}
+.mainAdvantages img {
+	max-width: 200px;
+	border-radius: 50%;
+	border: 3px solid rgba(234, 234, 234, 0.68);
+}
+.mainAdvantages-text {
+	font-size: 14px;
+	line-height: 20px;
+	color: #251e1e;
+}
+.mainAdvantages-text p {
+	margin-bottom: 10px;
+}
+.mainAdvantages-text h3 {
+	font-size: 24px;
+	margin: 20px 0 20px 0;
+	line-height: 20px;
+	font-weight: 500;
+}
+/**************MAIN ADVANTAGE END**************/
+
+/**************FOOTER**************/
+
+footer {
+	background: #03346d;
+}
+
+.mainFooter h4 {
+	margin-top: 40px;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Open Sans';
+}
+.mainFooter p {
+	margin-bottom: 10px;
+	line-height: 18px;
+}
+.mainFooter p a {
+	font-size: 15px;
+	color: #FF9900;
+	line-height: 18px;
+}
+.footer-soc a {
+	margin: 0 0 0 10px;
+	font-size: 26px;
+	color: #fff;
+}
+.borderRow {
+	padding-bottom: 30px;
+	border-bottom: 1px dashed #fff;
+}
+.footerUL {
+	margin-top: 15px;
+	line-height: 24px;
+	text-align: left;
+}
+.footerUL ul {
+	font-style: italic;
+	color: #5d5d5d;
+	list-style: none;
+	line-height: 18px;
+	padding: 0;
+	font-size: 110%;
+}
+.footerUL ul a {
+	color: #337ab7;
+}
+.footerUL p {
+	color: #888;
+}
+
+/**************FOOTER END**************/
+
+.sh-button {
+	z-index: 999999;
+	font-size: 14px;
+	font-family: 'Arial';
+	color: #fff;
+	position: fixed;
+	cursor: pointer;
+	-webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, .5);
+	box-shadow: inset 0 0 1px rgba(255, 255, 255, .5);
+	background: #1c7bd3;
+	bottom: 0;
+	left: 711.5px;
+	height: 36px;
+	line-height: 36px;
+	min-width: 177px;
+	max-width: 465px;
+}
+.sh-button img {
+	margin: 6px;
+	max-width: 27px;
+	float: left;
+}
+.sh-text {
+	  overflow: hidden;
+    height: 27px;
+    line-height: 27px;
+    margin-top: 4px;
+    white-space: nowrap;
+    cursor: pointer;
+    border-left: 1px solid rgba(255,255,255,.3);
+    padding: 0 8px;
+    font-size: 16px;
+    color: #fff;
+    float: left;
+    max-width: 328px;
+}
+/**************OTHER**************/
+.active {
+	background: #fff;
+	border-bottom: none;
+}
+/**************OTHER END**************/
+
+@media (min-width: 576px) {
+	.navbar-brand {
+		margin-right: 1rem;
+	}
+}
+
+// Средние девайсы («таблетки», >= 768px)
+@media (min-width: 768px) {
+	
+}
+
+// Большие девайсы (десктопы, >= 992px)
+@media (min-width: 992px) {
+
+}
+
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px) { ... }
