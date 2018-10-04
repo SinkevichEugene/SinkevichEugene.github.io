@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+ 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="first-page.css">
+  <script src="scripts.js"></script>
+	<title>First Page</title>
+</head>
+<body class="body">
+	<header class="header">
+		<div class="header__date">Среда, 24 Марта</div>
+		<div class="header__time">16:07:38</div>
+		<div class="header__cashier">Кассир: Иванов Андрей <span class="header__circle"></span></div>
+	</header>
+
+	<div class="main-container">
+		<div class="nav">
+			<div class="nav-left">
+				<a href="#" class="nav__item">Наличные<br>25</a>
+				<a href="#" class="nav__item"> Карта<br>150,25</a>
+				<a href="#" class="nav__item">Безнал.</a>
+				<a href="#" class="nav__item">Счёт клиента</a>
+				<a href="#" class="nav__item">Бонусы</a>
+			</div>
+			<a href="#" class="nav__item nav__item_last addClass"><i class="fas fa-times"></i></a>
+		</div>
+		<div class="left-side">
+			<div class="row-waiter">
+				<div class="row-waiter__item"><i class="far fa-user"></i> 2</div>
+				<div class="row-waiter__item"><i class="far fa-calendar-check"></i> 113</div>
+				<div class="row-waiter__item"><i class="fas fa-table"></i> 7</div>
+				<div class="row-waiter__item_last">Официант: Кедрова Мария</div>
+			</div>
+			<div class="table-wrapper">
+				<table class="table">
+				  <thead>
+				    <tr class="table__line">
+				      <th class="table__item_left">Блюдо</th>
+				      <th class="table__item_right">Кол-во</th>
+				      <th class="table__item_right">Цена</th>
+				      <th class="table__item_right table__item_last">Всего</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr class="table__line table__line_color">
+				      <td class="table__item_left">Водка "Царская"</td>
+				      <td class="table__item_right">500г</td>
+				      <td class="table__item_right">5 BYN</td>
+				      <td class="table__item_right table__item_last">25 BYN</td>
+				    </tr>
+				    <tr class="table__line">
+				      <td class="table__item_left">Пицца "Эль Дьябло"(бол.)</td>
+				      <td class="table__item_right">1</td>
+				      <td class="table__item_right">50 BYN</td>
+				      <td class="table__item_right table__item_last">50 BYN</td>
+				    </tr>
+				    <tr class="table__line table__line_color">
+				      <td class="table__item_left">Лягушачьи лапки</td>
+				      <td class="table__item_right">2</td>
+				      <td class="table__item_right">100 BYN</td>
+				      <td class="table__item_right table__item_last">200 BYN</td>
+				    </tr>
+				    <tr class="table__line">
+				      <td class="table__item_left">Вино "Шардоне" 20 лет</td>
+				      <td class="table__item_right">2</td>
+				      <td class="table__item_right">50 BYN</td>
+				      <td class="table__item_right table__item_last">100 BYN</td>
+				    </tr>
+				    <tr class="table__line table__line_color">
+				      <td class="table__item_left">Мороженое "Ля Ве"</td>
+				      <td class="table__item_right">2</td>
+				      <td class="table__item_right">20 BYN</td>
+				      <td class="table__item_right table__item_last">40 BYN</td>
+				    </tr>
+				    <tr class="table__line">
+				      <td class="table__item_left">Вода минеральная "Дарида"</td>
+				      <td class="table__item_right">100г</td>
+				      <td class="table__item_right">5 BYN</td>
+				      <td class="table__item_right table__item_last">5 BYN</td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+			<div class="pay-side">
+				<div class="pay-side__text-one">Предоплата: <span class="text_weight">0,00 BYN</span></div>
+				<div class="pay-side__text-two">Подытог: <span class="text_weight">390,00 BYN</span></div>
+			</div>
+			<div class="pay-side">
+				<div class="pay-side__text-one">Скидка: <span class="text_weight">0,00 BYN</span></div>
+				<div class="pay-side__text-two">Надбавка: 10%</div>
+			</div>
+			<div class="in-total">
+				<div class="pay-side__text-one text_size">Итого:</div>
+				<div class="pay-side__text-two text_size text_weight">425,00 BYN</div>
+			</div>
+			<div class="short-change">
+				<div class="pay-side__text-two text_size text_size text_color-red text_weight">Сдача: 0,00 BYN</div>
+			</div>
+		</div>
+		<div class="right-side">
+			<input class="input" placeholder="25,00">
+			<div class="calculator__row">
+            <button type="button" class="calculator__key">1</button>
+            <button type="button" class="calculator__key">2</button>
+            <button type="button" class="calculator__key">3</button>
+            <button type="button" class="calculator__key calculator__key_color">+1</button>
+            <button type="button" class="calculator__key calculator__key_color">+2</button>
+        </div>
+        <div class="calculator__row">
+            <button type="button" class="calculator__key">4</button>
+            <button type="button" class="calculator__key">5</button>
+            <button type="button" class="calculator__key">6</button>
+            <button type="button" class="calculator__key calculator__key_color">+5k</button>
+            <button type="button" class="calculator__key calculator__key_color">+10</button>
+        </div>
+        <div class="calculator__row">
+            <button type="button" class="calculator__key">7</button>
+            <button type="button" class="calculator__key">8</button>
+            <button type="button" class="calculator__key">9</button>
+            <button type="button" class="calculator__key calculator__key_color">+20</button>
+            <button type="button" class="calculator__key calculator__key_color">+50</button>
+        </div>
+        <div class="calculator__row">
+            <button type="button" class="calculator__key">,</button>
+            <button type="button" class="calculator__key">0</button>
+            <button type="button" class="calculator__key">C</button>
+            <button type="button" class="calculator__key calculator__key_color">+100</button>
+            <button type="button" class="calculator__key calculator__key_color">+500k</button>
+        </div>
+
+
+		</div>
+		<footer class="footer">
+			<div class="cheque">
+				<span class="footer__square"></span>
+				<span class="footer__text">Печатать<br>товарный чек</span>
+			</div>
+			<div class="comment">
+				<span class="flex-pos"><i class="far fa-comment-dots"></i></span><span class="flex-pos">Коммент.</span>
+			</div>
+			<div class="discounts">
+				<span class="flex-pos"><i class="fas fa-percent"></i><br></span>
+				<span class="flex-pos">Скидки</span>
+			</div>
+			<div class="not-pay">Без оплаты</div>
+			<div class="to-pay">Оплатить</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			$(".addClass").click(function(){
+				$(".body").toggleClass("body-style"); return false;
+			});
+		});
+	</script>
+</body>
+</html>

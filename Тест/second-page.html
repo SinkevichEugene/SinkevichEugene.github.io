@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+ 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="second-page.css">
+  <script src="scripts.js"></script>
+	<title>Second Page</title>
+</head>
+<body class="body">
+	<header class="header">
+		<div class="header__date">Среда, 24 Марта</div>
+		<div class="header__time">16:07:38</div>
+		<div class="header__cashier">Кассир: Иванов Андрей <span class="header__circle"></span></div>
+	</header>
+	<div class="nav">
+		<div class="nav-left">
+			<a href="#" class="nav__item">Карта зала</a>
+			<a href="#" class="nav__item">По оффициантам</a>
+			<a href="#" class="nav__item">По столам</a>
+			<a href="#" class="nav__item">Быстрый чек</a>
+		</div>
+			<div class="nav-right">
+				<a href="#" class="nav__item nav__item_right addClass"><i class="fas fa-bars"></i></a>
+				<a href="#" class="nav__item nav__item_last nav__item_right"><i class="fas fa-sign-out-alt"></i></a>
+			</div>
+		</div>
+	<div class="main-container">
+		
+		<div class="left-side">
+			<a href="#" class="left-side__item left-side__item_height button-hide"><i class="fas fa-chevron-left"></i></i>Свернуть</a>
+			<div class="left-side__nav">
+				<a href="#" class="left-side__item left-side__item_bg"><span class="left-side__number">1</span>Главный зал</a>
+				<a href="#" class="left-side__item left-side__item_bg"><span class="left-side__number">2</span>Бар</a>
+				<a href="#" class="left-side__item left-side__item_bg"><span class="left-side__number">3</span>Кухня</a>
+				<a href="#" class="left-side__item left-side__item_bg"><span class="left-side__number">16</span>Очень большой<br>зал для приёма</a>
+				<a href="#" class="left-side__item left-side__item_bg"><span class="left-side__number">256</span>Административный зал</a>
+				<a href="#" class="left-side__item left-side__item_bg"><span class="left-side__number">5</span>Зал</a>
+				<a href="#" class="left-side__item left-side__item_bg"><span class="left-side__number">7</span>VIP</a>
+			</div>
+		</div>
+		<div class="right-side">
+			<div class="right-side__row right-side__row_margin">
+				<div class="right-side__rectangle">11</div>
+				<div class="right-side__rectangle right-side__rectangle_long">Бар</div>
+			</div>
+			<div class="right-side__row">
+				<div class="right-side__rectangle">4</div>
+			</div>
+			<div class="right-side__row">
+				<div class="right-side__rectangle">7</div>
+				<div class="right-side__rectangle right-side__rectangle_reverse">128</div>
+			</div>
+			<div class="right-side__row right-side__row_margin right-side__row_margin-top">
+				<div class="right-side__wrapper">
+					<div class="right-side__rectangle right-side__circle">67</div>
+					<div class="right-side__rectangle right-side__circle">89</div>
+				</div>
+				<div class="right-side__wrapper">
+					<div class="right-side__rectangle right-side__circle">8</div>
+					<div class="right-side__rectangle right-side__circle">9</div>
+				</div>
+			</div>
+			<div class="right-side__row">
+				<div class="right-side__wrapper">
+					<div class="right-side__rectangle right-side__circle">296</div>
+					<div class="right-side__rectangle right-side__circle">101</div>
+				</div>
+				<div class="right-side__wrapper">
+					<div class="right-side__rectangle right-side__circle">10</div>
+					<div class="right-side__rectangle right-side__circle">13</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="row-buttons">
+			<div class="row__button button-up"><i class="fas fa-chevron-up"></i></div>
+			<div class="row__button button-down"><i class="fas fa-chevron-down"></i></div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script>
+		$(document).ready(function(){
+			$(".addClass").click(function(){
+				$(".body").toggleClass("body-change"); return false;
+			});
+			$(".button-hide").click(function(){
+				$(".left-side__nav").toggleClass("hide"); return false;
+			});
+		});
+	</script>
+</body>
+</html>

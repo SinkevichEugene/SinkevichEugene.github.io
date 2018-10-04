@@ -1,0 +1,382 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #b5b5b5;
+	font-family: sans-serif;
+	font-size: 13px;
+}
+/* HEADER */
+.header {
+	background-color: #000;
+	padding: 3px 0;
+	color: #fff;
+	overflow: auto;
+}
+.header__date {
+	float: left;
+	padding: 0 20px 0;
+	border-right: 1px solid #fff;
+}
+.header__time {
+	float: left;
+	padding-left: 20px;
+}
+.header__cashier {
+	float: right;
+	padding-right: 50px;
+}
+.header__circle {
+	display: inline-block;
+	margin-left: 10px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #47d255;
+}
+/* end header */
+
+/* main */
+.nav {
+	clear: both;
+	overflow: auto;
+	min-height: 80px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+.nav-left {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.nav__item {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 19%;
+	padding: 10px;
+	background-color: #fff;
+	text-decoration: none;
+	color: #000;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin-bottom: 10px;
+	margin-right: 5px;
+	height: 50px;
+	box-sizing: border-box;
+	font-weight: bold;
+	align-items: center;
+}
+.nav__item_last {
+	width: 80px;
+	margin-right: 0;
+}
+
+.nav__item:hover {
+	text-decoration: none;
+	border-bottom: 3px solid #096ee0;
+}
+.nav__item:focus {
+	text-decoration: none;
+	border-bottom: 3px solid #096ee0;
+}
+.row-waiter {
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+.row-waiter__item {
+	display: inline-block;
+	margin-right: 20px;
+	font-weight: bold;
+}
+.row-waiter__item_last {
+	display: inline-block;
+	float: right;
+}
+.main-container {
+	margin: 10px;
+	background-color: #f3f3f3;
+	overflow: auto;
+}
+.left-side {
+	float: left;
+	width: 49.5%;
+	margin-bottom: 10px;
+}
+.right-side {
+	float: right;
+	width: 49.5%;
+	margin-bottom: 10px;
+}
+.table-wrapper {
+	min-height: 380px;
+	background-color: #fff;
+}
+.table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.table__line {
+	height: 30px;
+}
+.table__line_color {
+	background-color: #68b976;
+}
+.table__item_left {
+	text-align: left;
+	padding-left: 5px;
+}
+.table__item_right {
+	text-align: right;
+	padding-right: 5px;
+}
+.pay-side {
+	overflow: auto;
+	margin-top: 5px;
+	background-color: #fff;
+	padding: 10px;
+}
+.pay-side__text-one {
+	float: left;
+}
+.pay-side__text-two {
+	float: right;
+}
+.text_size {
+	font-size: 25px;
+}
+.text_color-red {
+	color: #e4451b;
+}
+.text_weight {
+	font-weight: bold;
+}
+.in-total {
+	overflow: auto;
+	background-color: #fff;
+	padding: 10px 10px 0 10px;
+}
+.short-change {
+	overflow: auto;
+	background-color: #fff;
+	padding: 0 10px;
+}
+.calculator__row {
+	display: flex;
+  justify-content: space-between;
+}
+.calculator__key {
+	width: 19%;
+	height: 116px;
+	border: 0;
+	background-color: #fff;
+	margin-bottom: 5px;
+	font-size: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.calculator__key:hover {
+	cursor: pointer;
+}
+.calculator__key_color {
+	background-color: #0069dc;
+	color: #fff;
+}
+.input {
+	height: 80px;
+	width: 100%;
+	border: 0;
+	margin-bottom: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	color: #000;
+	text-align: right;
+	font-size: 30px;
+}
+.input::-webkit-input-placeholder { 
+	color: #000;
+	padding-right: 10px;
+}
+.input::-moz-input-placeholder { 
+	color: #000;
+	padding-right: 10px;
+}
+
+/* end main */
+
+/* footer */
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	clear: both;
+	background-color: #fff;
+	background-color: #f3f3f3;
+}
+.cheque, .comment, .discounts, .not-pay, .to-pay {
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.cheque {
+	width: 37%;
+	justify-content: flex-start;
+}
+.footer__text {
+	display: inline-block;
+	clear: both;
+	font-size: 14px;
+	font-weight: bold;
+}
+.comment {
+	width: 14%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.fa-comment-dots {
+	font-size: 30px;
+}
+.discounts {
+	width: 14%;
+	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.fa-percent {
+	font-size: 22px;
+}
+.not-pay {
+	width: 14%;
+	font-size: 18px;
+}
+.to-pay {
+	width: 19%;
+	background-color: #4cda64;
+	color: #fff;
+	font-size: 20px;
+}
+.footer__square {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 5px solid #0062ff;
+	margin-right: 10px;
+}
+.flex-pos {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+/* change style */
+
+.body-style, .body-style .nav, .body-style .main-container {
+	background-color: #242424;
+}
+.body-style .input, .body-style .calculator__key, .body-style .nav__item, .body-style .row-waiter, .body-style .table, .body-style .pay-side, .body-style .in-total, .body-style .short-change, .body-style .cheque, .body-style .comment, .body-style .discounts, .body-style .not-pay {
+	background-color: #0d0d0d;
+	color: #fff;
+}
+.body-style .input::-webkit-input-placeholder {
+	background-color: #0d0d0d;
+	color: #fff;
+}
+.body-style .input::-moz-input-placeholder {
+	background-color: #0d0d0d;
+	color: #fff;
+}
+
+.body-style .left-side {
+	background-color: #2b2b2b;
+}
+.body-style .table-wrapper {
+	background-color: #0d0d0d;
+}
+
+.body-style .footer {
+	background-color: #2b2b2b;
+}
+ 
+
+/* end change style */
+
+
+/* end footer */
+
+@media screen and (max-width: 768px) { 
+	.header {
+		font-size: 11px;
+	}
+	.header__date {
+		padding-right: 10px;
+	}
+	.header__time {
+		padding-left: 10px;
+	}
+  .header__cashier {
+    padding-right: 0;
+  }
+  .header__circle {
+  	margin-left: 5px;
+  }
+  .nav__item {
+		width: 100px;
+		padding: 10px;
+		margin-bottom: 10px;
+		margin-right: 5px;
+		height: 50px;
+	}
+	.nav__item_last {
+		width: 40px;
+		margin-right: 0;
+	}
+  .row-waiter {
+  	padding: 10px 5px;
+  }
+  .row-waiter__item {
+  	margin-right: 10px;
+  }
+
+  .table__item_lfet, .table__item_right {
+  	font-size: 12px;
+  }
+
+  .left-side {
+  	display: block;
+  	width: 100%;
+  }
+  .right-side {
+  	display: block;
+  	width: 100%;
+  }
+  .calculator__key {
+		height: 50px;
+	}
+	.cheque {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.comment {
+		width: 33%;
+	}
+	.discounts {
+		width: 33%;
+	}
+	.not-pay {
+		width: 33%;
+	}
+	.to-pay {
+		width: 100%;
+		margin-top: 5px;
+	}
+}
